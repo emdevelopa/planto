@@ -22,8 +22,9 @@ body {
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    ),
+    #1b2316;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
@@ -31,3 +32,25 @@ body {
     text-wrap: balance;
   }
 }
+
+.background {
+  background-image: url("../assets/GrassBG.png");
+  background-size: cover;
+  background-position: center; /* Center the image */
+  width: 100%;
+  height: 260vh; /* Ensure the container takes the full viewport height */
+  background-repeat: no-repeat;
+  padding: 6em;
+}
+
+.glass-effect {
+  border: 1px solid rgba(255, 255, 255, 0.279);
+  /* width: fit-content; */
+  background: rgba(255, 255, 255, 0.121);
+  border-radius: 35px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+}
+
+
+
