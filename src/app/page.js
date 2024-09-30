@@ -8,7 +8,7 @@ import TrendyPlants from "@/components/trendyPlants";
 export default function Home() {
   return (
     <section>
-      <main className="background w-full h-[160vh]">
+      <main className="background w-full flex flex-col gap-[4em]">
         <div className="flex justify-between">
           {/* L H S */}
           <div className="flex flex-col w-1/2 gap-4">
@@ -74,7 +74,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      <TrendyPlants/>
+        <TrendyPlants />
       </main>
     </section>
   );
